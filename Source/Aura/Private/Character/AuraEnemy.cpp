@@ -22,7 +22,9 @@ void AAuraEnemy::BeginPlay()
 {
 	Super::BeginPlay();
 
-}
+	check(AbilitySystemComponent);
+	AbilitySystemComponent->InitAbilityActorInfo(this, this);
+}	
 
 void AAuraEnemy::HighlightActor()
 {
